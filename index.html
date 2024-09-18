@@ -1,30 +1,130 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>calm galaxy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.publicdomainpictures.net/pictures/320000/velka/starry-night-sky.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #aaa;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #00ccff;
+            text-decoration: none;
+        }
+        
+        .photo {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 10vh;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social-media a {
+            margin: 0 15px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="Adam.jpeg" alt="Profile photo of Adam Besbes">
+        </div>
+        
+        <h1>Adam Besbes</h1>
 
- 
-  <div class="main"></div>
- 
- <!-- only used the JS bit underneath to generate the  box-shadow CSS box-shadow input.  list that layered shadow in line, let light that shine. 
--->
+        <h2>About Me</h2>
+        <p>
+            Hi! I am a software developer. I am new to this industry at the time this resume was posted. I hold a degree in Computer Science and have earned several certifications. Although certifications are valuable, I believe continuous learning is more important. I am currently seeking a job while continuing my studies. Beyond my formal education, I have gained knowledge in cybersecurity, hacking, and networking. My expertise in these fields drives my passion for further exploration, especially in radio-telecommunications and electronics. In addition, I enjoy studying math, physics, and other sciences, particularly space and time. My ultimate goal is to pursue higher education at a university with more resources to expand my knowledge.
+        </p>
 
+        <h2>Resume</h2>
+        <p>
+            <strong>Experience:</strong> None<br>
+            <strong>Education:</strong> BSc in Computer Science<br>
+            <strong>Skills:</strong> Rust, Go, C, Python, Java, Android Studio, JavaScript, Web Development, UML, Tailwind, Bootstrap, Linux (Arch)<br>
+            (Note: This list doesn’t cover all my skills, as I continuously learn new things at a fast pace, not all related to programming languages.)
+        </p>
 
-<!--
+        <h2>Projects</h2>
+        <div class="portfolio">
+            <p>Project 1 - (Provide details)</p>
+        </div>
 
-function randomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-}
+        <h2>About This Page</h2>
+        <p>
+            I created this page as a resume instead of using platforms like LinkedIn to protect my privacy. I chose to build this with simple HTML and CSS to keep it lightweight. If you have any inquiries, <strong>please use email first</strong>.<br>
+            This page was last updated on 01-01-2025.
+        </p>
 
-const STAR_COUNT = 400
-let result = ""
-for(let i = 0; i < STAR_COUNT; i++){
-    result += `${randomNumber(-50, 50)}vw ${randomNumber(-50, 50)}vh ${randomNumber(0, 1)}px ${randomNumber(0, 1)}px #fff,`
-}
-console.log(result.substring(0, result.length - 1))
+        <h2>Contact Info</h2>
+        <p class="contact-info">
+            Email: BesbesAdam@proton.me<br>
+            Phone: +216 99 203 264
+        </p>
 
--->
+        <h2>Social Media</h2>
+        <div class="social-media">
+            <a href="https://github.com/Adam-loy">GitHub</a>
+            <a href="https://www.linkedin.com/in/adem-besbes-53ab44256">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
